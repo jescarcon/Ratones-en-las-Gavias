@@ -9,6 +9,7 @@ import Login from './Components/Auth/Login/Login';
 import Register from './Components/Auth/Register/Register';
 import ProtectedRoute from './Components/Auth/ProtectedRoute';
 import Navbar from './Components/Main/Navbar/Navbar';
+import NewPlayer from './Components/NewPlayers/NewPlayer';
 
 //#endregion
 
@@ -45,7 +46,8 @@ function App() {
 
         {/* Protected with Login Routes */}
         <Route element={<ProtectedLayout />}>
-          <Route path="/" element={<HomePage />} />
+          {/* <Route path="/" element={<HomePage />} /> */}
+          <Route path="/" element={<NewPlayer/>} />
         </Route>
 
 

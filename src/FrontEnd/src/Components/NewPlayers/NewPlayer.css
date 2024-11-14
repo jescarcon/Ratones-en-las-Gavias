@@ -1,0 +1,53 @@
+.NewPlayer-Main-container {
+    width: 70%;
+    margin: 0 auto;
+    background-image: url('/Textures/stone.jpg');
+    user-select: none;
+    display: flex;
+    flex-wrap: wrap;          /* Permite que las columnas se acomoden en una nueva fila si no hay suficiente espacio */
+    justify-content: space-between;  /* Espacio entre las columnas */
+    gap: 20px;               /* Espacio entre las columnas */
+  }
+  
+  .NewPlayer-section {
+    flex: 1 1 calc(25% - 20px);   /* Cada sección ocupa el 25% del espacio disponible, ajustando el tamaño de las columnas */
+    box-sizing: border-box;      /* Asegura que el padding no afecte el tamaño total */
+    border-radius: 8px;          /* Bordes redondeados */
+    padding: 15px;               /* Espaciado interno */
+  }
+  
+  .NewPlayer-menu-image {
+    width: 100%;                 /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    height: 150px;               /* Ajusta la altura según sea necesario */
+    background-size: cover;     /* Asegura que la imagen cubra todo el contenedor */
+    background-position: center center;  /* Centra la imagen */
+    background-repeat: no-repeat;   /* No repite la imagen */
+    margin-bottom: 15px;         /* Separación con el título o el texto */
+    border: #a19769 2px solid;
+  }
+
+  .NewPlayer-menu-title {
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: #f1dd83;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .NewPlayer-menu-image:hover {
+    filter: brightness(70%); /* Oscurece la imagen */
+}
+  .NewPlayer-menu-text {
+    font-size: 14px;
+    color: rgb(173, 173, 173);
+
+  }
+  
+
+  @media screen and (max-width: 768px) {
+    .NewPlayer-section {
+      flex: 1 1 100%; /* En pantallas pequeñas, las columnas se convierten en una sola columna */
+    }
+  
+    .NewPlayer-menu-image {
+      height: 250px;  /* Aumenta aún más la imagen en pantallas pequeñas */
+    }
+  }
