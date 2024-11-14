@@ -1,0 +1,141 @@
+.Main-container{
+    width: 70%;
+    margin: 0 auto;
+    background-image: url('/Textures/stone.jpg');
+    user-select: none;
+
+}
+.carousel .control-dots { bottom: 0px; } /* Gallery dots distance */
+
+.carousel .slide img { 
+     object-fit: cover;
+     width: 100%; 
+     height: 600px; 
+    } /* Img size */
+
+
+
+.Icons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .icon-item {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .icon-item img {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 20px;
+  }
+  
+  .icon-item p {
+    font-size: 24px;
+    color: #ffcb69;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  .separator {
+    border: none;
+    border-top: 0.5px solid #bda952; /* Ajusta el color y grosor */
+    margin: 30px 0; /* Espaciado arriba y abajo */
+    width: 95%; /* Ajusta el ancho */
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.Intro{
+    text-align: center;
+    color: rgb(173, 173, 173);
+    width: 95%;
+    margin: 0 auto;
+}
+
+
+
+.Systems {
+  display: flex;
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+
+.System-img-group {
+  width: 50%;
+}
+.System-img-group img {
+  width: 150px; /* Ajusta el tamaño según prefieras */
+  height: 150px;
+  min-width: 100px;
+  object-fit: cover;
+}
+
+.Systems-text {
+  width: 50%;
+  text-align: center;
+  line-height: 1.6;
+  color: rgb(173, 173, 173);
+}
+
+
+.Extra-Info{
+  display: flex;
+  color: rgb(173, 173, 173);
+  text-align: center;
+}
+.Extra-Info-text{
+  width: 40%;
+  margin: 0 auto;
+}
+
+
+.Contractible{
+  margin-top: 5%;
+}
+.Contractible .collapsible-section {
+  margin-bottom: 15px;
+  color: white;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.collapsible-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+
+}
+
+.toggle-icon {
+  font-size: 20px;
+  transition: transform 0.3s ease;
+}
+
+.collapsible-content {
+  padding: 10px 0;
+  overflow: hidden;
+  height: 0;
+  opacity: 0;
+  transition: height 0.3s ease, opacity 0.3s ease;
+  margin-left:2% ;
+}
+
+.collapsible-content.open {
+  height: auto;
+  opacity: 1;
+}
+
+.contractible-separator {
+  border-top: 1px solid white;
+  margin: 10px 0;
+  width: 75%;
+  margin: 0 auto;
+  margin-bottom: 2%;
+}

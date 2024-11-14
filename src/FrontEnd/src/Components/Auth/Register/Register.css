@@ -1,0 +1,21 @@
+.RegisterPage-Container {
+   color: white;
+   margin: 0 auto;
+   width: 50%;
+   border-radius: 14px;
+   text-align: center;
+   margin-top: 4%;
+   margin-bottom: 4%;
+   user-select: none;
+   padding: 20px;
+   margin-bottom: 10%;
+
+   background-color: rgba(255, 255, 255, 0.3); /* Color de fondo semitransparente */
+   backdrop-filter: blur(10px); /* Difuminado del fondo */
+   -webkit-backdrop-filter: blur(10px); /* Soporte para navegadores Webkit */
+}
+@media (max-width: 1920px) {
+   .RegisterPage-container{
+       width: 50%;
+   }
+}
