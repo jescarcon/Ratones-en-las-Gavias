@@ -10,6 +10,9 @@ import Register from './Components/Auth/Register/Register';
 import ProtectedRoute from './Components/Auth/ProtectedRoute';
 import Navbar from './Components/Main/Navbar/Navbar';
 import NewPlayer from './Components/NewPlayers/NewPlayer';
+import Larp from './Components/NewPlayers/Larp/Larp';
+import Npcs from './Components/NewPlayers/Npcs/Npcs';
+import Dictionary from './Components/NewPlayers/Dictionary/Dictionary';
 
 //#endregion
 
@@ -46,8 +49,12 @@ function App() {
 
         {/* Protected with Login Routes */}
         <Route element={<ProtectedLayout />}>
-          {/* <Route path="/" element={<HomePage />} /> */}
-          <Route path="/" element={<NewPlayer/>} />
+          <Route path="/" element={<HomePage />} />
+          <Route path="/newplayer" element={<NewPlayer/>} />
+          <Route path="/newplayer/larp" element={<Larp/>} />
+          <Route path="/newplayer/npcs" element={<Npcs/>} />
+          <Route path="/newplayer/dictionary" element={<Dictionary/>} />
+
         </Route>
 
 

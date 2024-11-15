@@ -1,0 +1,53 @@
+.Larp-Main-container {
+    width: 70%;
+    margin: 0 auto;
+    background-image: url('/Textures/stone.jpg');
+    user-select: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.Larp-title {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #f1dd83;
+    font-family: 'Times New Roman', Times, serif;  
+    margin-top: 2%;
+    margin-left: 2%;  
+}
+
+.Larp-text {
+    margin-top: 2%;
+    margin-left: 2%;
+    color: gray;
+    width: 95%;
+}
+
+/* Estilo para imágenes grandes (individuales) */
+.Larp-image {
+    width: 96%;     
+    margin: 0 auto; 
+    height: 600px;    
+    background-size: cover;  
+    background-position: center; 
+    margin-top: 20px; 
+}
+
+/* Estilo para imágenes en pareja */
+.Larp-pair .Larp-image {
+    width: 90%;
+    height: 350px; /* Altura más pequeña */
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.Larp-pair {
+    display: flex;
+    gap: 20px;
+}
+
+.Larp-first-one, .Larp-second-one {
+    width: 50%;
+}

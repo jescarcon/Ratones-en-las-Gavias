@@ -61,7 +61,7 @@ export default function HomePage() {
         </Carousel>
       </div>
 
-      <div className="Icons">
+      <div className="Home-Icons">
         {icons.map((icon, index) => (
           <div key={index} className="icon-item">
             <div><img src={icon.src} alt={`Icon ${index}`} /></div>
