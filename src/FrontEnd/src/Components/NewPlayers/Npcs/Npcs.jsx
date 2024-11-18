@@ -10,164 +10,212 @@ import NpcsImage4 from '/Main/Gallery/img-4.jpg';
 export default function Npcs() {
     return (
         <div className="Npcs-Main-container">
-            <div className='Npcs-Intro'>
-                <div className='Npcs-title'>¿Qué es el Rol?</div>
+            <div className='Npcs-single'>
+                <div className='Npcs-title'>Personajes no jugadores (PNJ) y creadores de juego</div>
                 <hr className="separator" />
                 <div className='Npcs-text'>
                     <p>
-                        ¿Qué es el Npcs?
-                        Live Action Role Play, o Npcs, es un juego de rol interactivo que se caracteriza por la improvisación, la actuación y el ingenio. El juego se desarrolla cuando ustedes, los jugadores, toman decisiones y sus esfuerzos tienen éxito o fracasan. Un poco como ser el personaje principal de tu propia película o libro. Sumérgete en un escenario y vive una historia como uno de sus personajes. ¡Esto no es nada difícil y en realidad es increíblemente divertido!
+                        Los NPC (personajes no jugadores) pueden disfrutar de un juego tan intenso y emocionante como los jugadores (libres), aunque tienen un conjunto fijo de reglas para la apariencia, el comportamiento y la historia de sus roles. Ayudas al organizador a dar vida a la trama prevista, estableces el marco para los jugadores y proporcionas la atmósfera deseada al evento. Por eso, poco a poco comenzamos a llamarlos "creadores de juego", porque a través de su propio juego hacen posible el juego para otros.
+                    </p>
+                    <p>
+                        Hay facciones de NPC que luchan intensivamente (Undead Flesh, Black Ice, Skargen) y facciones de NPC que incorporan un juego de rol intenso con menos elementos de lucha (Tribus, Gremios, Atteron, etc.).
                     </p>
                 </div>
-                <div className="Npcs-image" style={{ backgroundImage: `url(${NpcsImage2})` }}></div>
+                <div className="Npcs-single">
+                    <div
+                        className="Npcs-image-container"
+                        style={{ backgroundImage: `url(${NpcsImage1})` }}
+                    ></div>
+                </div>
             </div>
-            <div className='Npcs-pair'>
+
+            <div className='Npcs-trio'>
                 <div className='Npcs-first-one'>
-                    <div className='Npcs-title'>¿Qué debo hacer para experimentar Npcs?</div>
+                    <div className='Npcs-title'>Antecedentes y estilo</div>
                     <hr className="separator" />
                     <div className='Npcs-text'>
                         <p>
-                            Para experimentar Npcs, no tienes que hacer mucho excepto involucrarte en la aventura y la experiencia misma. Es posible que esto no funcione exactamente como desea al principio, pero eso no es un problema. Es como sentarse juntos en una mesa y jugar un juego de mesa. Aceptan seguir juntos las reglas del mundo, hasta cierto punto creer que lo que se representa a su alrededor es la realidad y que básicamente quieren ser parte de esta ficción. Npcs también es un poco como andar en bicicleta: usted debe vender. Por supuesto, usted decide qué tan rápido o lento vende. También debes intentar distraerte lo menos posible para tener la mejor experiencia posible y no perderte demasiado del juego. Eso significa que el teléfono móvil, el trabajo o los temas de conversación de la vida real deben dejarse lo más “lejos” posible durante la duración del juego. Una vez superado esto, ¡emprendemos la emocionante y fantástica aventura que damos forma juntos!
+                            Los manuales de juego y guías de estilo completos cuentan la historia de las facciones de NPC/jugadores y explican cómo imaginamos la apariencia de un miembro del respectivo ejército o grupo. Siempre comenzamos con el mínimo requerido. En base a esto, se ofrecen sugerencias o ideas para expandir el concepto.
                         </p>
                     </div>
-                    <div className="Npcs-image" style={{ backgroundImage: `url(${NpcsImage1})` }}></div>
                 </div>
                 <div className='Npcs-second-one'>
-                    <div className='Npcs-title'>Géneros</div>
+                    <div className='Npcs-title'>Traje</div>
                     <hr className="separator" />
                     <div className='Npcs-text'>
                         <p>
-                            El Npcs se puede jugar en muchos géneros diferentes, desde eventos históricos hasta escenarios apocalípticos, pasando por mundos cyberpunk y de ciencia ficción. Los acontecimientos de Mythodea tienen lugar en un entorno de fantasía medieval. Esto significa que te encontrarás con caballeros, escuderos y nobles, así como con orcos, elfos y magos. El género suele determinar también lo que es posible en el universo. Por ejemplo, puedes usar magia en un escenario de fantasía, lo que no es el caso en un Npcs histórico.
-                        </p>
-                    </div>
-                    <div className="Npcs-image" style={{ backgroundImage: `url(${NpcsImage3})` }}></div>
-                </div>
-            </div>
-            <div className='Npcs-pair'>
-                <div className='Npcs-first-one'>
-                    <div className='Npcs-title'>Personaje</div>
-                    <hr className="separator" />
-                    <div className='Npcs-text'>
-                        <p>
-                            A diferencia de los juegos de rol de mesa o los videojuegos, los propios Npcsers asumen el papel de un personaje, al igual que lo hacen los actores. Entonces representas a un personaje en la vida real, lo que significa que actúas, reaccionas a los eventos e interactúas con otros jugadores. Cada personaje Npcs tiene ciertas características y una historia de fondo, que puedes inventar tú mismo. Esto influye en cómo un personaje trata con su entorno y con otros jugadores.
-                        </p>
-                    </div>
-                    <div className="Npcs-image" style={{ backgroundImage: `url(${NpcsImage4})` }}></div>
-                </div>
-                <div className='Npcs-second-one'>
-                    <div className='Npcs-title'>Atuendos</div>
-                    <hr className="separator" />
-                    <div className='Npcs-text'>
-                        <p>
-                            In Npcs, every character wears a costume that fits to the genre and represents the background of the character. For example, a mage often wears long robes with ornaments, while a knight wears an armor and a tabard. For you, this means that when creating the costume, you should keep in mind the corresponding character and their story that you intend to play out. You can also start with the costume and then design the character’s story. Perhaps it’s best to remember that it’s your costume that is the first thing people notice about your character. What kind of impression do they get? Is this what you wanted to achieve?
+                            En LARP, cada personaje lleva un traje que se adapta al entorno y representa el trasfondo del personaje. Por ejemplo, un mago suele llevar túnicas largas con adornos, mientras que un caballero lleva armadura y tabardo. Para ti, esto significa que al crear el traje o la túnica, debes tener en cuenta el personaje y la historia correspondientes. También puedes empezar con el traje y luego diseñar la historia del personaje. Tal vez sea mejor recordar que tu traje es lo primero que la gente ve de ti. ¿Qué tipo de primera impresión se llevan de ti los demás participantes? ¿Es esta la impresión que pretendías lograr?
                         </p>
                         <p>
-                            Keep in mind that objects or materials that do not fit into the setting should not be used or should at least be covered up. For example, a plastic raincoat would be disturbing in a medieval setting.
+                            Hay que tener en cuenta que no se deben utilizar ni tapar objetos o materiales que no encajen en el entorno. Por ejemplo, un impermeable de plástico resultaría molesto en un entorno medieval.
                         </p>
                     </div>
-                    <div className="Npcs-image" style={{ backgroundImage: `url(${NpcsImage1})` }}></div>
                 </div>
-            </div>
-            <div className='Npcs-pair'>
-                <div className='Npcs-first-one'>
+                <div className='Npcs-third-one'>
                     <div className='Npcs-title'>Trama</div>
                     <hr className="separator" />
                     <div className='Npcs-text'>
                         <p>
-                            Cada historia tiene una trama. En Npcs hay un punto de partida a partir del cual comienza la historia y luego se desarrolla. Las acciones que realizan los jugadores y no jugadores y las decisiones que toman tienen un impacto en el curso del juego. El marco para esto está capturado en la trama del evento. Hay pautas sobre lo que puede suceder y lo que sucederá, pero cómo se desarrolla la historia depende esencialmente de los jugadores y no jugadores/creadores de juego y sus esfuerzos.
+                            Cada historia tiene su trama. En el LARP hay un punto de partida desde el que comienza la historia y luego se desarrolla. Las acciones que realizan los jugadores y las decisiones que toman tienen un impacto en el curso de la partida. Las consecuencias suelen quedar registradas en la trama del evento. Los PNJ son nuestros actores guía de esta historia. Hay pautas sobre lo que puede y va a suceder, pero cómo se desarrolla la historia depende básicamente de los jugadores y de sus esfuerzos.
                         </p>
                     </div>
-                    <div className="Npcs-image" style={{ backgroundImage: `url(${NpcsImage3})` }}></div>
-                </div>
-                <div className='Npcs-second-one'>
-                    <div className='Npcs-title'>Combates</div>
-                    <hr className="separator" />
-                    <div className='Npcs-text'>
-                        <p>
-                            No en todos los Npcs, pero en algunos Npcs hay peleas. Aunque en realidad fingen pelear entre sí. Especialmente en los reinos medieval y de fantasía, los jugadores suelen librar batallas épicas. Las armas que se utilizan están diseñadas de tal manera que no lastiman a nadie incluso cuando entran en contacto. Las armas Npcs no tienen hoja afilada, no son duras y están hechas de espuma, látex o goma. Sin embargo, debes tener cuidado al manipular las armas, ya que pueden provocar hematomas o golpear zonas frágiles. Por lo tanto, siempre debes ser considerado con tu contraparte. En el juego luchan unos contra otros, fuera del juego juegan juntos.
-                        </p>
-                    </div>
-                    <div className="Npcs-image" style={{ backgroundImage: `url(${NpcsImage2})` }}></div>
                 </div>
             </div>
-            <div className='Npcs-pair'>
+
+
+            <div className='Npcs-single'>
+                <div className='Npcs-title'>Ejércitos de NPC</div>
+                <hr className="separator" />
+                <div className='Npcs-text'>
+                    <p>
+                        Los PNJ de batalla son un elemento central de uno de los aspectos más impresionantes de ConQuest: ¡las enormes simulaciones de batalla con varios miles de participantes a la vez! Si eres uno de ellos, juegas por la historia, por la experiencia de los jugadores y por enriquecer todo el entorno con tu presencia y tu juego. Los PNJ de batalla son incansables, fantásticos "roles secundarios" que ayudan a convertir a los jugadores en héroes y les proporcionan una contraparte para su juego. ¡El escenario amenazante y aventurero no sería posible sin ellos!
+                    </p>
+                    <p>
+                        Los jugadores patrullan, luchan en batallas y animan el campamento de TI de las facciones de NPC. Su juego es para los jugadores y participantes, no se aferran al centro de atención y, en cambio, preparan el escenario para el panorama general.
+                    </p>
+                    <p>
+                        Cuando no estés de "servicio", puedes elegir tener un verdadero descanso de OT o continuar con el juego de roles de una manera más relajada. Por supuesto, a los participantes entusiastas se les permite asumir otros roles y profundizar aún más en la historia. Esto se puede especificar en un cuestionario con anticipación o decidir en el evento. Por supuesto, es importante tener suficiente descanso, para comer, beber y dormir para estar listo para nuevas batallas y tramas. Para que esto funcione, existe un plan de horarios.
+                    </p>
+                    <p>
+                        El campamento de NPC de OT generalmente está fuera de la vista de los jugadores y, por lo tanto, no necesita estar camuflado. También está permitido tener utensilios de cocina o lugares para dormir que parezcan completamente "no ambientales". Si quieres contribuir al campamento de TI como NPC de batalla, contáctanos; ¡estaremos encantados de recibir a todos y cada uno de los que quieran hacerlo! Esto es todavía bastante nuevo, así que por favor contáctenos directamente (regie@mythodea.de).
+                    </p>
+                </div>
+                <div className="Npcs-single">
+                    <div
+                        className="Npcs-image-container"
+                        style={{ backgroundImage: `url(${NpcsImage4})` }}
+                    ></div>
+                </div>
+            </div>
+
+
+            <div className='Npcs-single'>
+                <div className='Npcs-title'>Creadores de juego</div>
+                <hr className="separator" />
+                <div className='Npcs-text'>
+                    <p>
+                        Los creadores de juego son exactamente lo que sugiere su nombre: su trabajo es “hacer” o “impulsar” el juego. Son PNJ que actúan como personajes jugadores guiados, ya que dedican todo su juego al objetivo de la trama y el evento. Cómo lo hacen en detalle depende de ellos. Los creadores de juego transportan tramas, misiones y atmósfera. Son los roles secundarios para los jugadores, o a veces para las facciones enemigas, a quienes puedes odiar con fervor. Son la damisela en apuros o la gran hechicera de la que uno puede aprender. Eres un mentor o un sirviente, un caballero fracasado o una reina que toma la decisión correcta (o exactamente la incorrecta), dependiendo de lo que la experiencia más profunda, mejor, más dramática o más emocionante saque a relucir en los participantes. Fuera del juego, siempre conocen el objetivo del evento y ayudan a los jugadores a lo largo del camino. Si es posible, juegan de una manera que automáticamente atrae a los participantes y proporciona lo que necesitan para que otros jugadores encuentren su camino en el juego. También viven momentos emocionales profundos con los participantes dentro del juego, lo que hace que su tarea sea especialmente satisfactoria y emocionante. Tanto para el propio mediapunta como para todos los que lo rodean. Dirigen la acción de forma invisible y garantizan la máxima inmersión, es decir, el entorno en el que se desarrolla el juego de los participantes.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div className='Npcs-single'>
+                <div className='Npcs-title'>Facciones de NPC</div>
+                <hr className="separator" />
+            </div>
+
+
+            <div className='Npcs-trio'>
                 <div className='Npcs-first-one'>
-                    <div className='Npcs-title'>¿Que es un jugador?</div>
-                    <hr className="separator" />
+                    <div className='Npcs-title'>Los Skargen</div>
                     <div className='Npcs-text'>
                         <p>
                             Un jugador es una persona que viste un disfraz y encarna un personaje ficticio. Este personaje, su historia y el disfraz los elige el propio jugador. La persona actúa en vivo como parte de la trama del evento y tiene un cierto grado de libertad de acción y puede influir en parte en el resultado de la historia más amplia o de líneas argumentales individuales. Como jugador, declaras tu intención de participar en el juego, involucrarte tanto como sea posible y asegurarte de que tú y los demás jugadores paséis un buen rato. Debido a que Npcs es más o menos como un deporte, usted acepta las reglas del juego y, como jugador, se asegura de que usted y otros puedan jugar sin obstáculos. Tendrás (dependiendo del tipo de evento) tu propio alojamiento y, a menudo, también te proporcionarás tu propia comida. Usted se asegura de que su propio equipo sea seguro para todos los participantes que lo rodean y es responsable de mantenerlo así. Npcs es como un deporte de equipo o como andar en bicicleta en una pista común: solo podemos hacerlo divertido si trabajamos juntos. Se muestran consideración el uno por el otro y se ayudan mutuamente a experimentar el juego. Además se intenta perturbar lo menos posible la inmersión de los demás participantes. Esto es independiente de si juegan “unos contra otros” dentro de la historia. Fuera de la historia, todos los jugadores ayudan juntos para permitir y crear la mejor experiencia posible para todos.
                         </p>
                     </div>
-                    <div className="Npcs-image" style={{ backgroundImage: `url(${NpcsImage4})` }}></div>
+                    <div className="Npcs-single">
+                        <div
+                            className="Npcs-image-container"
+                            style={{ backgroundImage: `url(${NpcsImage1})` }}
+                        ></div>
+                    </div>
                 </div>
                 <div className='Npcs-second-one'>
-                    <div className='Npcs-title'>¿Qué es una inmersión?</div>
-                    <hr className="separator" />
+                    <div className='Npcs-title'>El hielo negro</div>
                     <div className='Npcs-text'>
                         <p>
-                            Cuando hablamos de inmersión, nos referimos a la inmersión de una realidad ficticia. Ese es el objetivo de un evento Npcs, simular un mundo que sea lo más creíble, colorido y emocionante posible, para que tanto los jugadores como sus personajes puedan tener la mejor experiencia Npcs posible. La inmersión es algo que se origina en la mente de los participantes y, por tanto, es un estado frágil. Quizás similar a dormir. Cuanto más a menudo lo “despierten”, peor calificará la “experiencia de dormir”. Por eso es importante ser consciente de esto. Seguramente hay buenas razones (como el peligro) para despertar a las personas dormidas, pero conviene reducirlo al mínimo. La inmersión es algo en lo que debes participar activamente y todos deben compartir. Los organizadores siempre intentarán evitar perturbaciones durante la inmersión tanto como sea posible. Cuando esto no sea posible, necesitarás un poco más de fantasía o la capacidad de imaginar o pasar desapercibido (en caso de perturbar los inodoros dixi u otra logística necesaria). Pero una cosa está clara, si todos conseguimos “soñar”, sumergirnos, lo pasaremos bien.
+                            El Hielo Negro (SE en alemán) es el ejército de PNJ más antiguo de ConQuest. Los SE suelen ir a la batalla vestidos de negro y azul y marchan fuertemente armados. ¡Experimentarán cambios interesantes a lo largo de la campaña!
+                        </p>
+                        <p>
+                            Se puede encontrar información sobre el Hielo Negro en los grupos de Facebook (Essence of the Black Ice, Mythodea NSC) y por correo electrónico ( schwarzeseis@burgschneider.com ).
                         </p>
                     </div>
-                    <div className="Npcs-image" style={{ backgroundImage: `url(${NpcsImage1})` }}></div>
+                    <div className="Npcs-single">
+                        <div
+                            className="Npcs-image-container"
+                            style={{ backgroundImage: `url(${NpcsImage2})` }}
+                        ></div>
+                    </div>
                 </div>
-            </div>
-            <div className=''>
-                <div className=''>
-                    <div className='Npcs-title'>¿Qué debo hacer para experimentar Npcs?</div>
-                    <hr className="separator" />
+                <div className='Npcs-third-one'>
+                    <div className='Npcs-title'>La carne no muerta</div>
                     <div className='Npcs-text'>
                         <p>
-                            ¡Para todos! ¡Todos (sin importar tu apariencia, tu edad o lo que hagas en tu vida real) son bienvenidos a Npcs!
+                            The Undead Flesh (abreviatura en alemán UF) es un reino que se ha convertido en un reino de no muertos. Estilísticamente, UF está basado en Inglaterra en torno al siglo XII y XIII con una porción de fantasía fanática de no muertos. Imagina caballeros, soldados y campesinos no muertos vestidos de colores oscuros. El maquillaje es imprescindible, al igual que muchas capas de ropa rota y armaduras oxidadas.
                         </p>
                         <p>
-                            ¿Quién no ha pensado mientras leía un libro: “¡Me gustaría vivir eso!” ¿O “¡Lo habría hecho de otra manera!”? Esta es la idea básica de todos los juegos de rol en vivo. Npcs es para todos y cada uno de los que quisieran ser el personaje de una historia y preguntarse: “¿Y si fuera un héroe luchando por la justicia? ¿O un villano siniestro? ¿Cómo elegiría si no estuviera simplemente leyendo una aventura, sino experimentándola?
-                        </p>
-                        <p>
-                            Pero eso es sólo el comienzo de la afición. Porque hay mucho más por descubrir además del héroe que quizás quieras ser. Todo el juego está inmerso en un mundo de personajes fascinantes y deslumbrantes. Ofrece innumerables posibilidades para celebraciones exuberantes en tabernas medievales o en grandes torneos. Cualquiera puede competir en esgrima, tiro con arco o cantar serenatas y dejar atrás todas las preocupaciones de la vida cotidiana durante un fin de semana. En Npcs puedes probar quién o qué te gustaría ser. Únete, participa y ayuda a darle vida a este mundo fantástico.
+                            Se puede encontrar información sobre Undead Flesh en los grupos de Facebook Lairdom (Silent Hill, Corpsedale, Barrenbay y Flowerfield, Mythodea NSC) y por correo electrónico ( untotesfleisch@burgschneider.com ).
                         </p>
                     </div>
-                    <div className="Npcs-image" style={{ backgroundImage: `url(${NpcsImage2})` }}></div>
+                    <div className="Npcs-single">
+                        <div
+                            className="Npcs-image-container"
+                            style={{ backgroundImage: `url(${NpcsImage3})` }}
+                        ></div>
+                    </div>
                 </div>
             </div>
-            <div className=''>
-                <div className=''>
-                    <div className='Npcs-title'>¿Cómo se crea este mundo?</div>
-                    <hr className="separator" />
-                    <div className='Npcs-text'>
-                        <p>
-                            Nuestro equipo crea un pedazo de mundo de fantasía con escenarios elaborados de edificios, efectos, máscaras y muchos otros extras. El resultado es una simulación completamente interactiva de un mundo ficticio en el que podrás sumergirte por completo. Sin embargo, a diferencia de los mercados medievales, los eventos no tienen lugar para entretener a un público pasivo y que paga. En cambio, todos los participantes participan activamente en el juego y son al mismo tiempo espectadores. Dos cosas están en primer plano: ¡diversión y creatividad!
-                        </p>
 
-                    </div>
-                    <div className="Npcs-image" style={{ backgroundImage: `url(${NpcsImage3})` }}></div>
-                </div>
-            </div>
-            <div className=''>
-                <div className=''>
-                    <div className='Npcs-title'>Historia</div>
-                    <hr className="separator" />
+
+            <div className='Npcs-pair'>
+                <div className='Npcs-first-one'>
+                    <div className='Npcs-title'>La peste y el ejército de la duda</div>
                     <div className='Npcs-text'>
                         <p>
-                            En la mayoría de los Npcs suele haber una “trama”. Se trata de una historia de fondo y un marco, que fue inventado por los organizadores para darle al juego un escenario o un marco de referencia en el que moverse, una razón común para que todos los personajes interactúen entre sí.
+                            La Pestilencia y el Ejército de la Duda (a veces llamado Ratio) son dos grupos de batalla de PNJ muy pequeños. La Pestilencia son los infectados, que caminan por el campo de batalla e inspiran miedo entre los jugadores con sus fluidos armados. El Ejército de la Duda son guerreros orientales. Juntos, estos dos pequeños grupos cuentan una historia nueva, trágica y emocionante. ¡Sé parte de ella desde el principio!
                         </p>
                         <p>
-                            Querer o no dejarte cautivar y dejar llevar por esta trama e involucrarte o no, ya es cosa tuya. De este modo, cada participante puede decidir por sí mismo si quiere convertirse en un personaje principal o prefiere observar todo desde el fondo. El compromiso de cada individuo determina cuánto se vive y, sobre todo, qué tan directo se puede sentir.
+                            Puede encontrar información sobre este nuevo y emocionante y trágico capítulo de NPC en Facebook (Family of Doubt), NPC Ning (después de comprar un boleto puede registrarse allí, escríbanos a info@skald.com ) y por correo electrónico ( pest-adz@mythodea.de ).
                         </p>
                     </div>
-                    <div className="Npcs-image" style={{ backgroundImage: `url(${NpcsImage2})` }}></div>
+                    <div className="Npcs-single">
+                        <div
+                            className="Npcs-image-container"
+                            style={{ backgroundImage: `url(${NpcsImage3})` }}
+                        ></div>
+                    </div>
                 </div>
-            </div>
-            <div className=''>
-                <div className=''>
-                    <div className='Npcs-title'>Objetivo del juego</div>
-                    <hr className="separator" />
+                <div className='Npcs-second-one'>
+                    <div className='Npcs-title'>El Freischärler</div>
                     <div className='Npcs-text'>
                         <p>
-                            No hay ningún objetivo en Npcs como lo hay, por ejemplo, en un juego de mesa. Todos los que participan en un juego tienen sus propios objetivos. Ya sea que busques un duelo honorable en la batalla, una persona que te inicie en las artes de la magia, resuelva acertijos o simplemente quieras sentarte en la taberna con una jarra de vino de miel (hidromiel), el único objetivo que todos tienen en común. Es una interacción armoniosa en un hermoso ambiente. Por eso no se puede decir que hay ganadores o perdedores en los juegos de rol en vivo. ¡El Npcs es el objetivo! Y tal vez también para sumergirse lo más profundamente posible en el mundo fantástico.
+                            Los Freischärler, que son como un grupo de partisanos, lucharon durante años en las tierras de los no muertos contra las tropas de Terra Ankor. Las eternas penurias de la vida tras las líneas enemigas los han convertido en una tropa ruda y resistente, que está constantemente a la caza de las cabezas de sus enemigos. Los Freischärler son el lugar adecuado para eliminar a los villanos de forma selectiva y también para llevar a cabo extraños y oscuros secretos. Ya sean nobles o jornaleros, cualquiera puede cobrar recompensas siempre que se respeten las reglas de los Freischärler. Los Freischärler serán uno de los nuevos vínculos entre el juego de la ciudad y el campo de batalla en los próximos años.                        </p>
+                    </div>
+                    <div className="Npcs-single">
+                        <div
+                            className="Npcs-image-container"
+                            style={{ backgroundImage: `url(${NpcsImage2})` }}
+                        ></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div className='Npcs-pair'>
+                <div className='Npcs-first-one'>
+                    <div className='Npcs-title'>Atterón</div>
+                    <div className='Npcs-text'>
+                        <p>
+                            Atteron es una facción de creadores de juego que acompaña a los jugadores en su traslado al continente sur. El reino de Atteron está gobernado por la reina Jocelyn y está basado en la Inglaterra histórica (alrededor del 800-1400 d. C.). Fuera de su tierra natal, los Atteronianos suelen estar liderados por uno de los seis hijos de la reina, con caballeros (tanto hombres como mujeres) y altos señores y damas de los seis condados de Atteron a su lado. A ellos se les une un séquito de sirvientes, cocineros, doncellas, eruditos, escuderos y soldados.
                         </p>
                     </div>
-                    <div className="Npcs-image" style={{ backgroundImage: `url(${NpcsImage3})` }}></div>
+                    <div className="Npcs-single">
+                        <div
+                            className="Npcs-image-container"
+                            style={{ backgroundImage: `url(${NpcsImage3})` }}
+                        ></div>
+                    </div>
+                </div>
+                <div className='Npcs-second-one'>
+                    <div className='Npcs-title'>Compañía Carmesí</div>
+                    <div className='Npcs-text'>
+                        <p>
+                            La Crimson Company es una poderosa organización comercial en el juego, comparable a la East India Trading Company. Al igual que el Banner of Knights, la Compañía es un campamento temático independiente. El idioma coloquial en el campamento es el inglés y el objetivo es proporcionar a los participantes internacionales una introducción lo más sencilla y profunda posible al mundo y la trama de Mythodea. El campamento de la Compañía ofrece oportunidades de juego especiales para diferentes clases de personajes dentro de una estructura abierta. Puedes encontrar a la Crimson Company en el distrito del puerto. Por el momento, no puedes acampar allí como jugador, pero en el futuro la Crimson Company, al igual que el “Bund der Ritter”, se convertirá en un campamento independiente.
+                        </p>
+                    </div>
+
                 </div>
             </div>
             <Footer />

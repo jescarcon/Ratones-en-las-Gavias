@@ -1,80 +1,94 @@
-  /* Navbar.css */
-  body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-  }
+/* Estilos generales para la navbar */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
 
 .navbar {
-  width: 70%;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-image: url('/Textures/stone.jpg');
+  background-size: cover;
+  top: 0;
+  z-index: 100;
+
+  width: 70%;
+  margin: 0 auto;
 }
 
-.navbar-logo {
-  display: flex;
-  align-items: center;
-}
-
-.logo-link {
+/* Logo */
+.navbar-logo .logo-link {
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: #fff;
 }
 
 .logo-image {
-  width: 90px; /* Ajusta el tamaño según necesites */
-  height: 90px;
+  width: 80px; /* Ajusta el tamaño del logo */
+  height: auto;
   margin-right: 10px;
-  padding: 10px;
 }
 
+/* Menú de navegación */
 .navbar-menu {
   display: flex;
-  gap: 15px;
-  margin-right: 2%;
+  gap: 20px;
 }
 
 .navbar-item {
+  position: relative;
+  text-align: center;
+  font-size: 16px;
   color: #fff;
   text-decoration: none;
-  padding: 8px 16px;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-.navbar-item:hover {
-  background-color: #555;
-  color: #fff;
-  border-radius: 5px;
-}
-
-.navbar-toggle {
-  display: none;
-  flex-direction: column;
+  font-weight: bold;
   cursor: pointer;
 }
 
-.bar {
-  width: 25px;
-  height: 3px;
-  background-color: #fff;
-  margin: 4px 0;
-  transition: transform 0.3s;
+.navbar-item a {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
 }
 
-.navbar-toggle.open .bar:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
+.navbar-item:hover {
+  color: #ffcc00; /* Cambia el color cuando se pasa el ratón por encima */
+  text-decoration: none;
 }
 
-.navbar-toggle.open .bar:nth-child(2) {
-  opacity: 0;
+/* Submenú */
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px 0;
+  width: 200px;
+  border-radius: 5px;
 }
 
-.navbar-toggle.open .bar:nth-child(3) {
-  transform: rotate(-45deg) translate(6px, -6px);
+.navbar-item:hover .submenu {
+  display: block;
+  
+}
+
+.submenu-item {
+  color: #fff;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.submenu-item:hover {
+  background-color: #555;
+  color: #ffcc00;
+}
+
+/* Estilos para la sección activa */
+.navbar-item.active {
+  border-bottom: 2px solid #ffcc00;
 }
 
 @media (max-width: 768px) {
@@ -89,7 +103,12 @@
     display: flex;
   }
 
-  .navbar-toggle {
-    display: flex;
+  .navbar-item {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .submenu {
+    width: 100%;
   }
 }

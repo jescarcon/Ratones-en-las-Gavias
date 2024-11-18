@@ -10,8 +10,8 @@ export default function Dictionary() {
                 <hr className="separator" />
                 <div className='Dictionary-text'>
                     <p>
-                        ¿Qué es el Dictionary?
-                        Live Action Role Play, o Dictionary, es un juego de rol interactivo que se caracteriza por la improvisación, la actuación y el ingenio. El juego se desarrolla cuando ustedes, los jugadores, toman decisiones y sus esfuerzos tienen éxito o fracasan. Un poco como ser el personaje principal de tu propia película o libro. Sumérgete en un escenario y vive una historia como uno de sus personajes. ¡Esto no es nada difícil y en realidad es increíblemente divertido!
+                        ¿Qué es el LARP o Rolplay?
+                        Live Action Role Play, o Rolplay, es un juego de rol interactivo que se caracteriza por la improvisación, la actuación y el ingenio. El juego se desarrolla cuando ustedes, los jugadores, toman decisiones y sus esfuerzos tienen éxito o fracasan. Un poco como ser el personaje principal de tu propia película o libro. Sumérgete en un escenario y vive una historia como uno de sus personajes. ¡Esto no es nada difícil y en realidad es increíblemente divertido!
                     </p>
                 </div>
             </div>
