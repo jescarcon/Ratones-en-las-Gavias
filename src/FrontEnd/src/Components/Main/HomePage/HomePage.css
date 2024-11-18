@@ -5,7 +5,7 @@
     user-select: none;
 
 }
-.carousel .control-dots { bottom: 0px; } /* Gallery dots distance */
+.carousel .control-dots {    bottom: 0px; } /* Gallery dots distance */
 
 .carousel .slide img { 
      object-fit: cover;
