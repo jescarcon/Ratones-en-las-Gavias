@@ -8,6 +8,12 @@ export default function Games() {
     const [currentUser, setCurrentUser] = useState(null); // Usuario actual obtenido del backend
     const username = localStorage.getItem('username'); // Obtiene el username del localStorage
     const [isModalOpen, setIsModalOpen] = useState(false); // Estado para controlar la visibilidad del modal
+    const [contextMenu, setContextMenu] = useState({
+        visible: false,
+        x: 0,
+        y: 0,
+        game: null, // El juego seleccionado
+    });
 
     // Opciones para los campos con valores predefinidos
     const DIFFICULTY_CHOICES = [
@@ -131,7 +137,19 @@ export default function Games() {
             setLoading(false);
         }
     };
+    useEffect(() => {
+        const handleClickOutside = () => {
+            if (contextMenu.visible) {
+                setContextMenu({ ...contextMenu, visible: false });
+            }
+        };
 
+        window.addEventListener('click', handleClickOutside);
+
+        return () => {
+            window.removeEventListener('click', handleClickOutside);
+        };
+    }, [contextMenu]);
     // Cargar Games y usuario al montar el componente
     useEffect(() => {
         fetchCurrentUser();
@@ -185,6 +203,15 @@ export default function Games() {
                                 <tr
                                     key={index}
                                     style={{ cursor: 'context-menu' }}
+                                    onContextMenu={(e) => {
+                                        e.preventDefault(); // Previene el menú contextual del navegador
+                                        setContextMenu({
+                                            visible: true,
+                                            x: e.pageX,
+                                            y: e.pageY,
+                                            game: game, // Asigna el juego correspondiente
+                                        });
+                                    }}
                                 >
                                     <td>{game.name}</td>
                                     <td>{game.system}</td>
@@ -343,7 +370,7 @@ export default function Games() {
                                         </select>
                                     </div>
                                     <div className="form-group">
-                                        
+
                                     </div>
                                 </div>
 
@@ -359,6 +386,47 @@ export default function Games() {
                 </div>
             )}
 
+
+            {contextMenu.visible && (
+                <div
+                    className="context-menu"
+                    style={{
+                        top: `${contextMenu.y}px`,
+                        left: `${contextMenu.x}px`,
+                    }}
+                    onClick={() => setContextMenu({ ...contextMenu, visible: false })} // Cierra al hacer clic
+                >
+                    <ul>
+                        <li
+                            className="context-menu-item"
+                            onClick={() => {
+                                console.log('Ver Detalles:', contextMenu.game);
+                                setContextMenu({ ...contextMenu, visible: false });
+                            }}
+                        >
+                            Ver Detalles
+                        </li>
+                        <li
+                            className="context-menu-item"
+                            onClick={() => {
+                                console.log('Solicitar Unirse:', contextMenu.game);
+                                setContextMenu({ ...contextMenu, visible: false });
+                            }}
+                        >
+                            Solicitar Unirse
+                        </li>
+                        <li
+                            className="context-menu-item"
+                            onClick={() => {
+                                console.log('Eliminar:', contextMenu.game);
+                                setContextMenu({ ...contextMenu, visible: false });
+                            }}
+                        >
+                            Eliminar
+                        </li>
+                    </ul>
+                </div>
+            )}
 
 
             <Footer />

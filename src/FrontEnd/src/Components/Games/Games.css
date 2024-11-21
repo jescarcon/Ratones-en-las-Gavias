@@ -290,6 +290,35 @@ button:hover {
   color: #222;
 }
 
+.context-menu {
+  position: absolute;
+  background: #222; /* Fondo oscuro */
+  color: #ffcc00; /* Texto amarillo */
+  border: 1px solid #444; /* Borde gris oscuro */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); /* Sombra suave */
+  z-index: 1000;
+  padding: 10px;
+}
+
+.context-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.context-menu-item {
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.context-menu-item:hover {
+  background: #444; /* Fondo más oscuro al pasar el ratón */
+}
+
+
 /* Responsividad */
 @media (max-width: 768px) {
   .Games-table {
