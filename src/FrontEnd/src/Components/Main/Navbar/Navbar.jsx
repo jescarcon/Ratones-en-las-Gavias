@@ -14,19 +14,11 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <Link to="/home" className="logo-link">
+        <Link to="/" className="logo-link">
           <img src={logo} alt="Logo" className="logo-image" />
         </Link>
       </div>
       <div className="navbar-menu">
-        <div className={`navbar-item ${isActive('/games')}`}>
-          <Link to="/games">Mis Partidas</Link>
-          <div className="submenu">
-            <Link to="/game1" className="submenu-item">Juego 1</Link>
-            <Link to="/game2" className="submenu-item">Juego 2</Link>
-            <Link to="/game3" className="submenu-item">Juego 3</Link>
-          </div>
-        </div>
         <div className={`navbar-item ${isActive('/newplayer')}`}>
           <Link to="/newplayer">Nuevos Jugadores</Link>
           <div className="submenu">
@@ -35,6 +27,9 @@ const Navbar = () => {
             <a href="/NewPlayers/Rules/rules.pdf" download={"/NewPlayers/Rules/rules.pdf"} className="submenu-item">Reglas y Guías</a>
             <Link to="/newplayer/dictionary" className="submenu-item">Diccionario de Términos</Link>
           </div>
+        </div>
+        <div className={`navbar-item ${isActive('/games')}`}>
+          <Link to="/games">Partidas</Link>
         </div>
         <div className={`navbar-item ${isActive('/events')}`}>
           <Link to="/events">Eventos</Link>

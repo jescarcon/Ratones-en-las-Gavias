@@ -32,7 +32,9 @@ BASE_APPS = [
 ]
 
 LOCAL_APPS =[
-    'Apps.User.AuthApp'
+    'Apps.User.AuthApp',
+    'Apps.Game.GameApp',
+
 ] 
 
 THIRDS_APPS=[

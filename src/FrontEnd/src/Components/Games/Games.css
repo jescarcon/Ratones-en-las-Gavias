@@ -1,0 +1,302 @@
+/* Contenedor principal */
+.Games-Main-container {
+  width: 70%;
+  margin: 0 auto;
+  background-image: url('/Textures/stone.jpg');
+  user-select: none;
+  display: grid;
+  gap: 20px;
+}
+
+/* Título */
+.Games-title {
+  font-size: 60px;
+  margin-bottom: 10px;
+  color: #f1dd83;
+  font-family: 'Times New Roman', Times, serif;  
+  margin-top: 2%;
+  text-align: center;
+}
+
+/* Subtítulo */
+.Games-subtitle {
+  font-size: 25px;
+  color: #f1dd83;
+  font-family: 'Times New Roman', Times, serif;  
+  text-align: center;
+}
+
+/* Texto */
+.Games-text {
+  margin-top: 2%;
+  margin-left: 2%;
+  color: gray;
+  width: 95%;
+}
+
+/* Estilos genéricos para contenedores de imágenes */
+.Games-image-container {
+  background-size: cover;  
+  background-position: center; 
+}
+
+/* Configuración para Single */
+.Games-single {
+  grid-template-columns: 1fr; /* Una columna */
+}
+.Games-single .Games-image-container {
+  height: 650px; /* Altura deseada */
+  width: 95%; 
+  margin: 0 auto;
+}
+
+/* Configuración para Pair */
+.Games-pair {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Dos columnas iguales */
+  gap: 20px;
+  width: 95%;
+  margin: 0 auto;
+}
+.Games-pair .Games-image-container {
+  height: 350px;
+}
+
+/* Configuración para Trio */
+.Games-trio {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Tres columnas iguales */
+  gap: 20px;
+  width: 95%;
+  margin: 0 auto;
+}
+.Games-trio .Games-image-container {
+  height: 300px;
+}
+
+.Games-table-button{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 2%;
+}
+
+/* Contenedor principal de la tabla */
+.Games-table {
+  width: 95%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  font-size: 1rem;
+  border: 1px solid #333;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #212121;
+  color: #e0e0e0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Encabezado de la tabla */
+.Games-table thead th {
+  padding: 15px;
+  background-color: #424242;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-align: left;
+  border-bottom: 2px solid #616161;
+}
+
+/* Filas de la tabla */
+.Games-table tbody tr {
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Filas alternadas con fondo */
+.Games-table tbody tr:nth-child(even) {
+  background-color: #333;
+}
+
+.Games-table tbody tr:nth-child(odd) {
+  background-color: #282828;
+}
+
+/* Efecto hover */
+.Games-table tbody tr:hover {
+  background-color: #616161;
+  transform: translateX(5px);
+}
+
+/* Celdas de la tabla */
+.Games-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #444;
+}
+
+/* Última fila sin borde */
+.Games-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Redondear esquinas de la tabla */
+.Games-table thead th:first-child {
+  border-top-left-radius: 10px;
+}
+.Games-table thead th:last-child {
+  border-top-right-radius: 10px;
+}
+.Games-table tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 10px;
+}
+.Games-table tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
+}
+
+/** CONTEXT MENU RIGHT CLICK **/
+.Games-context-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  background-color: #333; /* Fondo oscuro */
+  border: 1px solid #ffc107; /* Borde amarillo */
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra */
+  z-index: 1000;
+  padding: 5px 0;
+}
+
+.Games-context-menu-item {
+  padding: 10px 15px;
+  font-size: 14px;
+  color: #ffc107; /* Texto amarillo */
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.Games-context-menu-item:hover {
+  background-color: #444; /* Fondo más claro al pasar el ratón */
+  color: #fff; /* Texto blanco al pasar el ratón */
+}
+
+/* Botón "Crear Partida" */
+.Games-create-button {
+  display: inline-block;
+  background-color: #333; /* Fondo oscuro */
+  color: #ffc107; /* Texto amarillo */
+  padding: 10px 20px;
+  border: 2px solid #ffc107; /* Borde amarillo */
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  transition: transform 0.2s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.Games-create-button:hover {
+  background-color: #ffc107; /* Fondo amarillo */
+  color: #121212; /* Texto oscuro */
+  transform: scale(1.05); /* Animación al pasar el ratón */
+}
+/* Estilo del overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Fondo oscuro */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Mantener encima de otros elementos */
+}
+
+/* Estilo del contenido del modal */
+.modal-content {
+  background: #222; /* Fondo oscuro */
+  color: #f9d342; /* Texto amarillo */
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  width: 30%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+ 
+}
+.modal-header{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 5%;
+}
+.form-row{
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  margin: 0 auto;
+}
+/* Estilo para los campos de formulario y labels */
+.modal-content form{
+  display: flex;
+  flex-direction: column;
+}
+.form-group {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+label {
+  display: block;
+  color: #f9d342; /* Color amarillo para los labels */
+  margin-bottom: 5px;
+}
+
+input,
+select {
+  width: 90%;
+  padding: 8px;
+  margin-top: 5px;
+  background-color: #333; /* Fondo oscuro para inputs */
+  color: #f9d342; /* Texto amarillo */
+  border: 1px solid #444;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #f9d342; /* Fondo amarillo para el botón */
+  color: #222; /* Texto oscuro */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #e0c131; /* Amarillo más claro al pasar el mouse */
+}
+
+/* Estilo para el botón de cerrar */
+.modal-close-btn {
+  background: transparent;
+  color: #f9d342;
+  border: 1px solid #f9d342;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.modal-close-btn:hover {
+  background-color: #f9d342;
+  color: #222;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .Games-table {
+      font-size: 0.9rem;
+  }
+  .Games-table thead th,
+  .Games-table td {
+      padding: 10px;
+  }
+}

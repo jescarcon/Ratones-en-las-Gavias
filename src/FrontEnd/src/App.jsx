@@ -13,6 +13,7 @@ import NewPlayer from './Components/NewPlayers/NewPlayer';
 import Larp from './Components/NewPlayers/Larp/Larp';
 import Npcs from './Components/NewPlayers/Npcs/Npcs';
 import Dictionary from './Components/NewPlayers/Dictionary/Dictionary';
+import Games from './Components/Games/Games';
 
 //#endregion
 
@@ -54,6 +55,9 @@ function App() {
           <Route path="/newplayer/larp" element={<Larp/>} />
           <Route path="/newplayer/npcs" element={<Npcs/>} />
           <Route path="/newplayer/dictionary" element={<Dictionary/>} />
+
+          <Route path="/games" element={<Games/>} />
+
 
         </Route>
 
